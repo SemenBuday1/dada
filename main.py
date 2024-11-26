@@ -7,4 +7,11 @@ def input_strings():
             break
         strings.append(string)
     return strings
-strings = input_strings()
+
+def filter_short_strings(strings):
+    short_strings = []
+    for string in strings:
+        if len(string) <= 3:
+            short_strings.append(string)
+    return short_strings
+
